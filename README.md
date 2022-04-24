@@ -12,3 +12,8 @@
   - npx tailwindcss init -p
 
 - #03 TailwindCSS Practice
+
+- #04 TailwindCSS Practice 2
+
+  - aspect-square 라는 property는 정사각형으로 만들어준다. 즉, 가로 세로길이를 같게 해준다. (aspect-ratio: 1/1)
+  - space-x-3 과 같은 space property는 자식 요소들 간의 간격을 마진으로 알아서 만들어 준다.
