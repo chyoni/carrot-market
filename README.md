@@ -21,3 +21,7 @@
 - #05 TailwindCSS Practice 3
 
   - Modifier 라는 기능은 어떤 변경점을 말하는데 예를 들어 hover: focus: 등등이 그런 녀석을 말한다.
+
+- #06 TailwindCSS Practice 4
+
+  - List를 다룰 때도 여러 기능을 사용할 수 있다. (first, last, only, even, oad, empty ...)
