@@ -3,16 +3,17 @@ import type { NextPage } from 'next';
 const Home: NextPage = () => {
   return (
     <div className="bg-slate-400 xl:place-content-center py-20 px-20 grid gap-10 xl:grid-cols-3 lg:grid-cols-2 min-h-screen">
-      <div className="bg-white p-10 rounded-3xl shadow-xl flex flex-col justify-between">
-        <span className="font-semibold text-3xl">Select Item</span>
+      <div className="bg-white p-10 dark:bg-black rounded-3xl shadow-xl flex flex-col justify-between">
+        <span className="font-semibold text-3xl dark:text-white">
+          Select Item
+        </span>
         <ul>
           {[1, 2, 3, 4, 5].map((i) => (
-            <div
-              key={i}
-              className="flex justify-between my-2 first:bg-blue-50 last:bg-yellow-50"
-            >
-              <span className="text-gray-500">Grey Chair</span>
-              <span className="font-semibold">$19</span>
+            <div key={i} className="flex justify-between my-2">
+              <span className="text-gray-500 dark:text-gray-50">
+                Grey Chair
+              </span>
+              <span className="font-semibold dark:text-gray-50">$19</span>
             </div>
           ))}
           {['a', 'b', '', 'c'].map((val, i) => (
@@ -28,7 +29,10 @@ const Home: NextPage = () => {
           <span>Total</span>
           <span className="font-semibold">$10</span>
         </div>
-        <div className="mt-5 bg-blue-400 text-white p-3 text-center rounded-xl w-1/3 mx-auto">
+        <div
+          className="mt-5 bg-blue-400 dark:bg-black dark:border-white dark:border dark:hover:bg-red-300
+         text-white p-3 flex items-center justify-center rounded-xl w-1/3 mx-auto"
+        >
           Checkout
         </div>
       </div>

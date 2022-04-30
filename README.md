@@ -51,3 +51,11 @@
   - Responsive Design
   - Grid content center --> place-content-center
   - landscape / portrait
+
+- #11 TailwindCSS Practice 9
+
+  - Dark mode (일단, Tailwind는 tailwind.config.js 파일에서 기본 세팅이 media로 되어있는데 이게 의미하는 건 사용자의 시스템 속성을 따라간다
+    예를 들면, 내 PC가 dark mode 이면 이 tailwind도 기본이 darkmode로 세팅이되는 것, 근데 이 media말고 class가 있는데 이거는 className에 dark라는 키워드를 수동적으로
+    입력을 해줘야 dark모드를 실행한다는 그런 코드적인 부분으로 변경된다. 그래서 만약 어떤 앱이 다크모드를 선택 가능하게 토글버튼을 하나 보여주고 그걸 토글해서 darkmode로 실행하면
+    className에 dark를 추가하는 방식도 있지 근데 이 dark라는 키워드는 부모요소에 들어가고 그 하위 자식요소들에서 dark:xxx 이렇게 만들어줘야 한다 그래서 dark라는 키워드가 있는
+    부모의 자식에 한해서 다크모드에 대한 디자인을 할 수 있다 그래서 대게 html 태그나 body 태그같은 가장 상위요소 태그에 dark를 추가하는 뭐 그런 방식을 많이들 사용하지)
