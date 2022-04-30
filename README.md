@@ -37,7 +37,11 @@
   - peer-modifier라는 좋은 기능도 있는데 form을 사용할 때 어떤 인풋이 valid하지 않으면 뭐 잘못된 값을 입력했다는 안내 문구 같은 거를 말한다.
     peer가 될 녀석을 선택하고 peer의 변화에 따라 변경을 해줄 녀석을 peer-xxx 로 작업하면 된다 group이랑 약간 비슷하다.
 
-- #07 TailwindCSS Practice 6
+- #08 TailwindCSS Practice 6
 
   - file selector modifier
   - overlapping selector modifier
+
+- #09 TailwindCSS Practice 7
+
+  - Responsive CSS
