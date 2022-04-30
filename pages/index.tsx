@@ -99,6 +99,11 @@ const Home: NextPage = () => {
         This input is invalid
       </span>
       <input type={'password'} required placeholder="Password" />
+      <input
+        type={'file'}
+        className="file:px-3 file:bg-red-300 file:rounded-xl file:border-0 file:text-white file:transition-colors file:cursor-pointer file:hover:text-purple-400 
+        file:hover:bg-white"
+      />
       <input type={'submit'} value="Login" className="bg-white" />
     </form>
   );
