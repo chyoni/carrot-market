@@ -45,3 +45,9 @@
 - #09 TailwindCSS Practice 7
 
   - Responsive CSS
+
+- #10 TailwindCSS Practice 8
+
+  - Responsive Design
+  - Grid content center --> place-content-center
+  - landscape / portrait
