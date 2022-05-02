@@ -68,3 +68,7 @@
     거기다가 가장 좋은 점은 이 tailwind라는 프레임워크의 특성의 한계가 정해진 값만 사용할 수 있잖아 예를 들면 text-sm, text-lg 등 근데 이 정해진 가장 큰 속성보다
     더 큰 속성을 원할 때 그저 나는 "text-\[9999px]" 라고 작성하면 된다 그럼 이 컴파일러가 알아서 만들어준다. 정말 대단하다.
     거기다가 더 대단한건 bg-\[url('/example.png')] 이렇게 bg image도 내가 원하는 만큼 알아서 만들 수 있다는거다
+
+- #13 Enter pages
+
+  - TailwindCSS의 속성을 function을 사용해서 conditional하게 작성 가능하다.
