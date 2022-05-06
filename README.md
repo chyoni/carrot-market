@@ -93,3 +93,5 @@
 - #19 Community Screen
 
 - #20 Community Detail Screen
+
+- #21 Write Screen
