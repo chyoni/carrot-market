@@ -97,3 +97,7 @@
 - #21 Write Screen
 
 - #22 Chats Screen
+
+- #23 Chat Room Screen
+
+  - 입력창 하단 고정, 수신 및 발신 메시지 위치 설정
