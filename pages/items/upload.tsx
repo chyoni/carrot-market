@@ -6,7 +6,7 @@ const Upload: NextPage = () => {
       <div>
         <label
           className="w-full flex items-center justify-center border-2 border-dashed border-gray-300 h-48 rounded-md
-        text-gray-600 hover:text-orange-300 hover:border-orange-300 cursor-pointer"
+        text-gray-600 hover:text-orange-300 hover:border-orange-300 cursor-pointer shadow-md"
         >
           <svg
             className="h-12 w-12"
@@ -25,25 +25,46 @@ const Upload: NextPage = () => {
           <input className="hidden" type="file" />
         </label>
       </div>
-      <div>
-        <label>Price</label>
-        <div>
-          <div>
-            <span>$</span>
+      <div className="my-5">
+        <label
+          htmlFor="price"
+          className="text-gray-700 text-sm font-medium mb-1 block"
+        >
+          Price
+        </label>
+        <div className="rounded-md relative shadow-sm flex items-center">
+          <div className="absolute left-0 pl-3 flex items-center justify-center pointer-events-none">
+            <span className="text-sm text-gray-500">$</span>
           </div>
-          <input type="text" placeholder="0.00" />
-          <div>
-            <span>USD</span>
+          <input
+            id="price"
+            type="text"
+            placeholder="0.00"
+            className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md shadow-md pl-7
+               placeholder-gray-400 focus:outline-none focus:ring-orange-300 focus:border-orange-300"
+          />
+          <div className="absolute right-0 pr-3 flex items-center justify-center pointer-events-none">
+            <span className="text-sm text-gray-500">USD</span>
           </div>
         </div>
       </div>
       <div>
-        <label>Description</label>
+        <label className="text-gray-700 text-sm font-medium mb-1 block">
+          Description
+        </label>
         <div>
-          <textarea rows={4} />
+          <textarea
+            rows={4}
+            className="mt-1 shadow-md w-full focus:ring-2 focus:ring-orange-300 rounded-md border-gray-300 focus:border-orange-300"
+          />
         </div>
       </div>
-      <button>Upload product</button>
+      <button
+        className="mt-6 bg-orange-400 hover:bg-orange-400 w-full text-white py-2 px-4 
+              border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none"
+      >
+        Upload product
+      </button>
     </div>
   );
 };
