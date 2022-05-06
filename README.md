@@ -85,3 +85,9 @@
 - #17 File Input Tag Design
 
   - label 태그 안에 이미지로 보여질 svg와 input 태그를 넣고 input 태그는 css로 hidden 처리를 해준다. 그리고 svg를 꾸며주면 깔끔 !
+
+- #18 Upload Screen
+
+  - 부모의 relative 자식의 absolute를 사용하여 인풋에 한 줄로 달러 표시 USD 표시를 막 만들 수 있다
+
+- #19 Community Screen
