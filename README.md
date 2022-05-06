@@ -72,3 +72,8 @@
 - #13 Enter pages
 
   - TailwindCSS의 속성을 function을 사용해서 conditional하게 작성 가능하다.
+
+- #14 TailwindCSS Forms Plugin
+
+  - npm i @tailwindcss/forms
+  - tailwind.config.js에 추가한 플러그인을 작성
