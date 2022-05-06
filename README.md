@@ -79,3 +79,5 @@
   - tailwind.config.js에 추가한 플러그인을 작성
 
 - #15 Home Screen
+
+- #16 Item Detail Screen
