@@ -91,3 +91,5 @@
   - 부모의 relative 자식의 absolute를 사용하여 인풋에 한 줄로 달러 표시 USD 표시를 막 만들 수 있다
 
 - #19 Community Screen
+
+- #20 Community Detail Screen
