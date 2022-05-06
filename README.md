@@ -81,3 +81,7 @@
 - #15 Home Screen
 
 - #16 Item Detail Screen
+
+- #17 File Input Tag Design
+
+  - label 태그 안에 이미지로 보여질 svg와 input 태그를 넣고 input 태그는 css로 hidden 처리를 해준다. 그리고 svg를 꾸며주면 깔끔 !
