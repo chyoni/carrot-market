@@ -7,20 +7,19 @@ function tailwindClass(...className: string[]) {
 const Enter = () => {
   const [method, setMethod] = useState<'email' | 'phone'>('email');
   return (
-    <div className="px-5">
+    <div className="px-5 mx-auto sm:w-full md:w-4/5 lg:w-3/5 xl:w-2/5 2xl:w-1/3 min-h-screen -mt-36 flex flex-col justify-center">
       <div className="flex items-center justify-center">
-        <h3 className="mt-16 text-3xl font-bold">Enter to Carrot</h3>
-      </div>
-      <div className="flex items-center justify-center">
-        <span className="mt-8 text-sm text-gray-500">Enter using:</span>
+        <h3 className="mt-16 text-3xl font-bold font-mono text-orange-300">
+          Carrot Market
+        </h3>
       </div>
       <div className="grid grid-cols-2 gap-28 mt-10 border-b">
         <button
           onClick={() => setMethod('email')}
           className={tailwindClass(
-            'font-semibold text-gray-500  pb-6',
+            'font-semibold text-gray-500  pb-6 font-mono',
             method === 'email'
-              ? 'border-b-2 border-orange-400 text-orange-400 transition-colors'
+              ? 'border-b-2 border-orange-300 text-orange-300 transition-colors'
               : 'text-gray-400'
           )}
         >
@@ -29,16 +28,16 @@ const Enter = () => {
         <button
           onClick={() => setMethod('phone')}
           className={tailwindClass(
-            'font-semibold text-gray-500  pb-6',
+            'font-semibold text-gray-500  pb-6 font-mono',
             method === 'phone'
-              ? 'border-b-2 border-orange-400 text-orange-400 transition-colors'
+              ? 'border-b-2 border-orange-300 text-orange-300 transition-colors'
               : 'text-gray-400'
           )}
         >
           Phone number
         </button>
       </div>
-      <div>
+      <div className="mt-5">
         {method === 'email' ? <span>Email address</span> : null}
         {method === 'phone' ? <span>Phone number</span> : null}
       </div>
@@ -50,7 +49,7 @@ const Enter = () => {
               placeholder={'Email'}
               required
               className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
-               placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+               placeholder-gray-400 focus:outline-none focus:ring-orange-300 focus:border-orange-300"
             />
           ) : null}
           {method === 'phone' ? (
@@ -66,21 +65,21 @@ const Enter = () => {
                 placeholder={'Phone number'}
                 required
                 className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md rounded-l-none shadow-sm
-                placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+                placeholder-gray-400 focus:outline-none focus:ring-orange-300 focus:border-orange-300"
               />
             </div>
           ) : null}
           <div>
             {method === 'email' ? (
               <button
-                className="mt-6 bg-orange-500 hover:bg-orange-500 w-full text-white py-2 px-4 
+                className="mt-6 bg-orange-400 hover:bg-orange-400 w-full text-white py-2 px-4 
               border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none"
               >
                 Get login link
               </button>
             ) : (
               <button
-                className="mt-6 bg-orange-500 hover:bg-orange-500 w-full text-white py-2 px-4 
+                className="mt-6 bg-orange-400 hover:bg-orange-400 w-full text-white py-2 px-4 
               border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none"
               >
                 Get one-time password
@@ -101,7 +100,7 @@ const Enter = () => {
           <div className="grid grid-cols-2 gap-3 mt-6">
             <button
               className="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white 
-            text-sm font-medium text-gray-500 hover:bg-gray-50"
+            text-sm font-medium text-orange-300 hover:bg-gray-50"
             >
               <svg
                 className="w-5 h-5"
@@ -114,7 +113,7 @@ const Enter = () => {
             </button>
             <button
               className="flex justify-center items-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white 
-            text-sm font-medium text-gray-500 hover:bg-gray-50"
+            text-sm font-medium text-orange-300 hover:bg-gray-50"
             >
               <svg
                 className="w-5 h-5"

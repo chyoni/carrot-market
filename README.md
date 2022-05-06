@@ -77,3 +77,5 @@
 
   - npm i @tailwindcss/forms
   - tailwind.config.js에 추가한 플러그인을 작성
+
+- #15 Home Screen
