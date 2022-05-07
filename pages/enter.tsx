@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { tailwindClass } from '../libs/utils';
 
 const Enter = () => {
   const [method, setMethod] = useState<'email' | 'phone'>('email');
