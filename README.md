@@ -105,3 +105,5 @@
 - #24 Profile Screen
 
 - #25 Sold, Bought, Loved Screen
+
+- #26 Edit Profile Screen
