@@ -113,3 +113,5 @@
 - #28 Stream Detail Screen
 
 - #29 Create Stream Screen
+
+- #30 Layout (Header, NavBar)
