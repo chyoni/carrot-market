@@ -109,3 +109,5 @@
 - #26 Edit Profile Screen
 
 - #27 Live Stream Screen
+
+- #28 Stream Detail Screen
