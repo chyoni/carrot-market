@@ -117,3 +117,5 @@
 - #30 Layout (Header, NavBar)
 
 - #31 Screen Part Done
+
+- #32 Components (Code Refactoring)
