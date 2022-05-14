@@ -119,3 +119,5 @@
 - #31 Screen Part Done
 
 - #32 Components (Code Refactoring)
+
+- #33 Components 2 (Code Refactoring)

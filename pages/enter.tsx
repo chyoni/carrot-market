@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Input from '../components/input';
 import { tailwindClass } from '../libs/utils';
 
 const Enter = () => {
@@ -41,31 +42,9 @@ const Enter = () => {
       <div className="flex flex-col">
         <form>
           {method === 'email' ? (
-            <input
-              type={'text'}
-              placeholder={'Email'}
-              required
-              className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
-               placeholder-gray-400 focus:outline-none focus:ring-orange-300 focus:border-orange-300"
-            />
+            <Input type="email" required placeholder={'Email'} />
           ) : null}
-          {method === 'phone' ? (
-            <div className="flex rounded-md shadow-sm">
-              <span
-                className="flex items-center justify-center px-4 rounded-l-md 
-              border border-r-0 border-gray-300 bg-gray-50 text-gray-500 select-none text-sm"
-              >
-                +82
-              </span>
-              <input
-                type={'number'}
-                placeholder={'Phone number'}
-                required
-                className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md rounded-l-none shadow-sm
-                placeholder-gray-400 focus:outline-none focus:ring-orange-300 focus:border-orange-300"
-              />
-            </div>
-          ) : null}
+          {method === 'phone' ? <Input type="phone" required /> : null}
           <div>
             {method === 'email' ? (
               <button
