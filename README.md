@@ -149,3 +149,11 @@
   ```bash
   - npx prisma db push
   ```
+
+- #37 Prisma Practice
+
+  ```bash
+  - npm i @prisma/client (이건 prisma client를 설치하는 명령어)
+  - npx prisma generate (이건 prisma client로 데이터베이스 작업을 할 수 있게 client를 generate 해주는 명령어)
+  - npx prisma studio (이건 데이터베이스 관리자 패널을 띄우는 명령어)
+  ```
