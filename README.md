@@ -157,3 +157,7 @@
   - npx prisma generate (이건 prisma client로 데이터베이스 작업을 할 수 있게 client를 generate 해주는 명령어)
   - npx prisma studio (이건 데이터베이스 관리자 패널을 띄우는 명령어)
   ```
+
+- #38 NextJS API Routes
+
+  - NextJS는 너무 강력해서 서버를 따로 하나 더 만들어서 서버를 구축할 필요 없이 그냥 pages > api 폴더로 routing을 해서 api를 구현할 수가 있다.
