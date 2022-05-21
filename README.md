@@ -121,3 +121,10 @@
 - #32 Components (Code Refactoring)
 
 - #33 Components 2 (Code Refactoring)
+
+- #34 Prisma Setup and User Model
+
+  ```bash
+  - npm i prisma -D (프리즈마 다운로드)
+  - npx prisma init (프리즈마 다운받고 init)
+  ```
