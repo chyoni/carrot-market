@@ -140,3 +140,12 @@
   pscale create database <database name> --region <region name> (데이터 베이스 생성)
   pscale connect <database name> (만든 데이터베이스와 연결)
   ```
+
+- #36 Push DB to PlanetScale
+
+  - 하나 주의할 건 PlanetScale은 외래키 제약조건을 검사해주지 않는다. 그래서 그걸 대신해줄 Prisma에게
+    나 이것이 필요하다는 코드 두줄을 작성해야한다. schema.prisma에
+
+  ```bash
+  - npx prisma db push
+  ```
