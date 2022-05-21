@@ -128,3 +128,15 @@
   - npm i prisma -D (프리즈마 다운로드)
   - npx prisma init (프리즈마 다운받고 init)
   ```
+
+- #35 PlanetScale Setup
+
+  - PlanetScale은 우리가 직접 서버를 관리할 필요 없이 알아서 서버 관리를 해주는 데이터베이스라고 보면 된다.
+    즉 우리는 그저 이 데이터베이스를 가져다가 사용만하면 알아서 PlanetScale이 유지보수, 스케일링, 등등을 해주는 serverless platform이다.
+    그리고 이 데이터베이스를 prisma랑 연결해서 사용을 할 것이다. PlanetScale CLI를 사용해야 하는데 설치방법은 구글링하면 바로 나오니까 그거 하고 나서
+    로그인을 하면 pscale이라는 명령어를 통해서 데이터베이스를 만들고 만든 데이터베이스를 커넥션할 수 있다.
+
+  ```bash
+  pscale create database <database name> --region <region name> (데이터 베이스 생성)
+  pscale connect <database name> (만든 데이터베이스와 연결)
+  ```
