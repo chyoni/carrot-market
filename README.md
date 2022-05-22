@@ -177,3 +177,5 @@
 - #43 withHandler about nextJS handler api
 
 - #44 tsconfig.json (import paths)
+
+- #45 Interact Prisma with DB, NextJS

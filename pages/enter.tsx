@@ -82,14 +82,14 @@ const Enter = () => {
                 className="mt-6 bg-orange-400 hover:bg-orange-400 w-full text-white py-2 px-4 
               border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none"
               >
-                Get login link
+                {loading ? 'Loading' : 'Get login link'}
               </button>
             ) : (
               <button
                 className="mt-6 bg-orange-400 hover:bg-orange-400 w-full text-white py-2 px-4 
               border border-transparent rounded-md shadow-sm text-sm font-medium focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:outline-none"
               >
-                Get one-time password
+                {loading ? 'Loading' : 'Get one-time password'}
               </button>
             )}
           </div>
