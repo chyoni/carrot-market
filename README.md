@@ -173,3 +173,5 @@
 - #41 Custom Hook
 
 - #42 Custom Hook 2 (POST fetch)
+
+- #43 withHandler about nextJS handler api
