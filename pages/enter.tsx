@@ -1,9 +1,21 @@
 import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import Input from '../components/input';
 import { tailwindClass } from '../libs/utils';
 
+interface EnterForm {
+  email?: string;
+  phone?: string;
+}
+
 const Enter = () => {
+  const { register, reset, handleSubmit } = useForm<EnterForm>();
   const [method, setMethod] = useState<'email' | 'phone'>('email');
+
+  const onValid = (data: EnterForm) => {
+    console.log(data);
+  };
+
   return (
     <div className="px-5 mx-auto sm:w-full md:w-4/5 lg:w-3/5 xl:w-2/5 2xl:w-1/3 min-h-screen -mt-36 flex flex-col justify-center">
       <div className="flex items-center justify-center">
@@ -13,7 +25,10 @@ const Enter = () => {
       </div>
       <div className="grid grid-cols-2 gap-28 mt-10 border-b">
         <button
-          onClick={() => setMethod('email')}
+          onClick={() => {
+            reset();
+            setMethod('email');
+          }}
           className={tailwindClass(
             'font-semibold text-gray-500  pb-6 font-mono',
             method === 'email'
@@ -24,7 +39,10 @@ const Enter = () => {
           Email address
         </button>
         <button
-          onClick={() => setMethod('phone')}
+          onClick={() => {
+            reset();
+            setMethod('phone');
+          }}
           className={tailwindClass(
             'font-semibold text-gray-500  pb-6 font-mono',
             method === 'phone'
@@ -36,15 +54,26 @@ const Enter = () => {
         </button>
       </div>
       <div className="mt-5">
-        {method === 'email' ? <span>Email address</span> : null}
-        {method === 'phone' ? <span>Phone number</span> : null}
+        {method === 'email' ? (
+          <span className="font-medium text-sm">Email address</span>
+        ) : null}
+        {method === 'phone' ? (
+          <span className="font-medium text-sm">Phone number</span>
+        ) : null}
       </div>
       <div className="flex flex-col">
-        <form>
+        <form onSubmit={handleSubmit(onValid)}>
           {method === 'email' ? (
-            <Input type="email" required placeholder={'Email'} />
+            <Input
+              register={register('email')}
+              type="email"
+              required
+              placeholder={'Email'}
+            />
           ) : null}
-          {method === 'phone' ? <Input type="phone" required /> : null}
+          {method === 'phone' ? (
+            <Input register={register('phone')} type="phone" required />
+          ) : null}
           <div>
             {method === 'email' ? (
               <button
