@@ -1,8 +1,8 @@
+import Input from '@components/input';
+import useMutation from '@libs/client/useMutation';
+import { tailwindClass } from '@libs/client/utils';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Input from '../components/input';
-import useMutation from '../libs/client/useMutation';
-import { tailwindClass } from '../libs/client/utils';
 
 interface EnterForm {
   email?: string;
@@ -17,7 +17,6 @@ const Enter = () => {
   const onValid = (data: EnterForm) => {
     enter(data);
   };
-  console.log(loading, data, error);
 
   return (
     <div className="px-5 mx-auto sm:w-full md:w-4/5 lg:w-3/5 xl:w-2/5 2xl:w-1/3 min-h-screen -mt-36 flex flex-col justify-center">
