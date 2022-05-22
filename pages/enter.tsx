@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Input from '../components/input';
-import { tailwindClass } from '../libs/utils';
+import useMutation from '../libs/client/useMutation';
+import { tailwindClass } from '../libs/client/utils';
 
 interface EnterForm {
   email?: string;
@@ -10,10 +11,17 @@ interface EnterForm {
 
 const Enter = () => {
   const { register, reset, handleSubmit } = useForm<EnterForm>();
+  const [enter, { loading, data, error }] = useMutation('/api/users/enter');
   const [method, setMethod] = useState<'email' | 'phone'>('email');
 
   const onValid = (data: EnterForm) => {
-    console.log(data);
+    fetch('/api/users/enter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
   };
 
   return (

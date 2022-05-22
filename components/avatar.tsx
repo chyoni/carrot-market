@@ -1,5 +1,5 @@
 import React from 'react';
-import { tailwindClass } from '../libs/utils';
+import { tailwindClass } from '../libs/client/utils';
 
 interface AvatarProps {
   size: 'small' | 'midium' | 'large';

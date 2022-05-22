@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { tailwindClass } from '../libs/utils';
+import { tailwindClass } from '../libs/client/utils';
 
 interface LayoutProps {
   title?: string;
