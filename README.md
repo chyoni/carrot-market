@@ -171,3 +171,5 @@
 - #40 Convert HTML Form to React Hook Form
 
 - #41 Custom Hook
+
+- #42 Custom Hook 2 (POST fetch)

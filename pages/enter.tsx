@@ -15,13 +15,7 @@ const Enter = () => {
   const [method, setMethod] = useState<'email' | 'phone'>('email');
 
   const onValid = (data: EnterForm) => {
-    fetch('/api/users/enter', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
+    enter(data);
   };
 
   return (
