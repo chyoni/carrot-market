@@ -179,3 +179,5 @@
 - #44 tsconfig.json (import paths)
 
 - #45 Interact Prisma with DB, NextJS
+
+- #46 Create token table and connect user with new token

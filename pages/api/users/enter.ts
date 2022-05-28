@@ -16,7 +16,18 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
       ...payload,
     },
   });
+  const token = await client.token.create({
+    data: {
+      payload: '1234',
+      user: {
+        connect: {
+          id: user.id,
+        },
+      },
+    },
+  });
 
+  console.log(token);
   console.log(user);
 
   res.json({ ok: true });
