@@ -189,3 +189,9 @@
   ```bash
   npm install twilio
   ```
+
+- #49 SendGrid (Email Sender)
+
+  ```bash
+  npm install --save @sendgrid/mail
+  ```
