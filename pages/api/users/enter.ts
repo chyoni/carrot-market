@@ -1,6 +1,9 @@
+import twilio from 'twilio';
 import client from '@libs/server/client';
 import { NextApiRequest, NextApiResponse } from 'next';
 import withHandler, { ResponseType } from '@libs/server/withHandler';
+
+const twilioClient = twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
 
 async function handler(
   req: NextApiRequest,
@@ -38,6 +41,15 @@ async function handler(
     },
   });
 
+  // 원래는 To에 들어갈 값으로 유저가 생성한 핸드폰 번호를 입력해야 하는데, 우리는 지금 무료 버전을 쓰기 때문에 한 번호로 밖에 전송을 못해봄
+  if (phone) {
+    const message = await twilioClient.messages.create({
+      messagingServiceSid: process.env.TWILIO_SERVICE_SID,
+      to: process.env.TWILIO_PHONE_NUMBER!,
+      body: `Your login token is ${payload}`,
+    });
+    console.log(message);
+  }
   res.status(200).json({
     ok: true,
   });

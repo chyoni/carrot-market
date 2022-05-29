@@ -183,3 +183,9 @@
 - #46 Create token table and connect user with new token
 
 - #47 Twilio setup
+
+- #48 Twilio ndk
+
+  ```bash
+  npm install twilio
+  ```
